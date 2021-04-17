@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-// Stack info
+// Stack infoo
 type Stack struct {
 	Func string
 	Loc  string

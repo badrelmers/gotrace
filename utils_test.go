@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ysmood/gotrace"
+	"github.com/badrelmers/gotrace"
 )
 
 func TestMergeStackInfo(t *testing.T) {

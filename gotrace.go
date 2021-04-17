@@ -60,6 +60,10 @@ func Get(all bool) Traces {
 			}
 
 			if j%2 == 1 {
+				if len(regLoc.FindStringSubmatch(lines[j+1])) == 0 {
+					panic(fmt.Sprintf("----\n%d %+#v\n----", j, lines))
+				}
+				
 				s := Stack{
 					regFunc.FindStringSubmatch(line)[1],
 					regLoc.FindStringSubmatch(lines[j+1])[1],
